@@ -1,0 +1,41 @@
+.container-Component2 {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.container-Component2 .title {
+  font-size: 45px;
+  text-align: center;
+  width: 700px;
+}
+
+.container-Component2 .subtitle {
+  font-size: 18px;
+  line-height: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 600px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 700px) {
+  .container-Component2 {
+    margin-top: 20%;
+  }
+
+  .container-Component2 .title {
+    font-size: 30px;
+    width: 375px;
+  }
+  .container-Component2 .subtitle {
+    font-size: 15px;
+    line-height: 20px;
+    width: 350px;
+    
+  }
+}

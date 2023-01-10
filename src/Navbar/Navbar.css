@@ -1,0 +1,78 @@
+.navbar {
+  background-color: #0c1014;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top:0;
+  left: 0;
+}
+
+.navLeft {
+  float: left;
+  margin-top: 20px;
+  margin-left: 40px;
+  display: flex;
+}
+
+.navLeft .bar {
+  border-left: 3px solid white;
+  height: 20px;
+  margin-left: 10px;
+}
+.navLeft b {
+  margin-left: 5px;
+}
+
+.navRight {
+  float: right;
+  margin-top: 20px;
+  font-size: 13px;
+  margin-right: 40px;
+}
+
+.navRight span {
+  margin-right: 20px;
+}
+
+.navbar .hamburger {
+  visibility: hidden;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar .hamburger {
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    visibility: visible;
+  }
+
+  .navbar .hamburger div {
+    border-bottom: 3px solid white;
+    height: 2px;
+    width: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .navRight {
+    display: none;
+  }
+
+  .navbar #hidden {
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    height: 250px;
+    max-height: 250px;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar #hidden span {
+    margin: 15px;
+  }
+}
